@@ -1,0 +1,4 @@
+#site-footer > footer {
+  padding: 2rem;
+  background-color: var(--color-background-gray);
+}

@@ -1,0 +1,64 @@
+/* HEADER */
+.header-wrapper > header {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  padding: 1rem 1.5rem;
+  height: 6.25rem;
+  justify-content: center;
+  align-items: center;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem; */
+}
+
+.header-wrapper > header .logo {
+  width: 64px;
+  height: 64px;
+}
+
+.site-nav {
+  margin-left: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  font-family: var(--font-trade-gothic);
+  font-size: 1.5rem;
+  color: var(--color-brown);
+}
+
+.nav-links a {
+  display: block;
+  text-transform: capitalize;
+  margin: 0 1rem;
+}
+
+header > .user-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header > .user-actions > .user,
+header > .user-actions > .bag {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  fill: var(--color-brown);
+}
+
+header > .user-actions > .user:hover,
+header > .user-actions > .bag:hover {
+  color: var(--color-gold);
+  fill: var(--color-gold);
+}
+
+header > .user-actions > .user > .text {
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+}

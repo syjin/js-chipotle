@@ -1,0 +1,38 @@
+/.vscode
+
+test.2.html
+test.3.html
+test.html
+test.login.modal.html
+
+build-temp.js
+build-temp-2.js
+
+bag-temp.js
+bag-temp-2.js
+bag-temp-3.js
+bag-temp-4.js
+bag-claude.js
+
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

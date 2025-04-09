@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index temporary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./global.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/bag.css">
+  <link rel="stylesheet" href="./styles/modal-login.css">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <!-- Firebase SDK 핵심 기능 -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+
+  <!-- 필요한 Firebase 제품들을 추가 -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-storage.js"></script>
+</head>
+
+<body>
+  <div id="primary-header"></div>
+
+  <main>
+    <section class="hero-banner">
+      <video muted autoplay loop>
+        <source src="./assets/videos/smoked-brisket-hh-desktop-final.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="menu" class="container"></section>
+  </main>
+
+  <!-- <script type="module" src="./scripts/app.js"></script> -->
+  <script type="module" src="./scripts/index.js"></script>
+  <script type="module" src="./data.js"></script>
+  <script src="./scripts/global.js"></script>
+  <script>
+    const firebaseConfig = {
+      // Firebase 콘솔에서 가져온 설정
+      apiKey: 'AIzaSyARgsJ_aCia3NMyeB59_E8e0p5a4juKKG0',
+      authDomain: 'js-chipotle.firebaseapp.com',
+      projectId: 'js-chipotle',
+      storageBucket: 'js-chipotle.appspot.com',
+      messagingSenderId: '829004839753',
+      appId: '1:829004839753:web:1129aaa635e93f25d97898',
+      measurementId: 'G-MQ8V7WQVEC',
+    };
+
+    // Firebase 초기화
+    firebase.initializeApp(firebaseConfig);
+    console.log('complete');
+  </script>
+</body>
+
+</html>
